@@ -1,0 +1,32 @@
+.link,
+.link:active,
+.link:hover,
+.link:focus {
+  color: #ababab;
+  text-decoration: none;
+}
+.link {
+  position: relative;
+}
+.link:hover {
+  color: #fff;
+}
+.link:before {
+  content: "λ";
+  position: absolute;
+  left: -15px;
+  color: #e15d74;
+}
+.link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: #e15d74;
+  transition: all 0.35s ease;
+}
+.link:hover:after {
+  width: 100%;
+}
