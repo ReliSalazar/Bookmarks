@@ -1,82 +1,110 @@
-import React, { useState, useEffect } from "react";
-import linkService from "./services/links";
 import Link from "./components/Link";
-import Form from "./components/Form";
 import "./App.css";
 
 function App() {
-  const [bookmarks, setBookmarks] = useState([]);
-  const [newName, setNewName] = useState("");
-  const [newUrl, setNewUrl] = useState("");
-  const [newType, setNewType] = useState("");
-
-  useEffect(() => {
-    linkService.getAll().then((initialLinks) => setBookmarks(initialLinks));
-  }, []);
-
-  const addBookmark = (e) => {
-    e.preventDefault();
-    const linkObject = {
-      name: newName,
-      url: newUrl,
-      type: newType,
-    };
-
-    linkService
-      .create(linkObject)
-      .then((returnedBookmark) => {
-        setNewName("");
-        setNewUrl("");
-        setNewType("");
-        setBookmarks(bookmarks.concat(returnedBookmark));
-      })
-      .catch((error) => {
-        console.error(error);
-        setNewName("");
-        setNewUrl("");
-        setNewType("");
-      });
-  };
-
-  const handleName = (e) => setNewName(e.target.value);
-  const handleUrl = (e) => setNewUrl(e.target.value);
-  const handleType = (e) => setNewType(e.target.value);
-
-  const daily = bookmarks.filter((bookmark) => bookmark.type === "daily");
-  const utility = bookmarks.filter((bookmark) => bookmark.type === "utility");
-  const social = bookmarks.filter((bookmark) => bookmark.type === "social");
+  const daily = [
+    {
+      name: "Google News",
+      url: "https://news.google.com/",
+      type: "daily",
+    },
+    {
+      name: "Gmail",
+      url: "https://gmail.com/",
+      type: "daily",
+    },
+    {
+      name: "Pomodoro Clock",
+      url: "https://relisalazar.github.io/pomodoro-clock/",
+      type: "daily",
+    },
+    {
+      name: "Schedule",
+      url: "https://relisalazar.github.io/daily/",
+      type: "daily",
+    },
+    {
+      name: "Rutina",
+      url: "https://relisalazar.github.io/rutina/",
+      type: "daily",
+    },
+  ];
+  const utility = [
+    {
+      name: "Coolors",
+      url: "https://coolors.co/",
+      type: "utility",
+    },
+    {
+      name: "Mongo",
+      url: "https://cloud.mongodb.com/",
+      type: "utility",
+    },
+    {
+      name: "Heroku",
+      url: "https://dashboard.heroku.com/",
+      type: "utility",
+    },
+    {
+      name: "Github",
+      url: "https://github.com/",
+      type: "utility",
+    },
+    {
+      name: "Portfolio",
+      url: "https://relisalazar.com/",
+      type: "utility",
+    },
+    {
+      name: "Demo Site",
+      url: "http://demo.relisalazar.com/",
+      type: "utility",
+    },
+  ];
+  const social = [
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/",
+      type: "social",
+    },
+    {
+      name: "Tweetdeck",
+      url: "https://tweetdeck.twitter.com/",
+      type: "social",
+    },
+    {
+      name: "Wired-7",
+      url: "https://wired-7.org/",
+      type: "social",
+    },
+    {
+      name: "Lainchan",
+      url: "https://lainchan.org/",
+      type: "social",
+    },
+  ];
 
   return (
     <div className="app">
       <div className="container">
-        <Form
-          onSubmit={addBookmark}
-          name={newName}
-          handleName={handleName}
-          ulr={newUrl}
-          handleUrl={handleUrl}
-          type={newType}
-          handleType={handleType}
-        />
-
         <div className="links">
           <h2>daily use</h2>
           {daily.map((bookmark) => (
-            <Link name={bookmark.name} url={bookmark.url} key={bookmark.id} />
+            <Link name={bookmark.name} url={bookmark.url} key={bookmark.url} />
+          ))}
+        </div>
+
+        <div className="links">
+          <h2>social</h2>
+          {social.map((bookmark) => (
+            <Link name={bookmark.name} url={bookmark.url} key={bookmark.url} />
           ))}
         </div>
 
         <div className="links">
           <h2>utility</h2>
           {utility.map((bookmark) => (
-            <Link name={bookmark.name} url={bookmark.url} key={bookmark.id} />
-          ))}
-        </div>
-        
-        <div className="links">
-          <h2>social</h2>
-          {social.map((bookmark) => (
-            <Link name={bookmark.name} url={bookmark.url} key={bookmark.id} />
+            <Link name={bookmark.name} url={bookmark.url} key={bookmark.url} />
           ))}
         </div>
       </div>
