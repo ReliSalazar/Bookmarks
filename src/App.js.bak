@@ -63,15 +63,15 @@ function App() {
   ];
   const social = [
     {
+      name: "Facebook",
+      url: "https://www.facebook.com/",
+      type: "social",
+    },
+    {
       name: "Tweetdeck",
       url: "https://tweetdeck.twitter.com/",
       type: "social",
     },
-	{
-      name: "Facebook",
-      url: "https://www.facebook.com/",
-      type: "social",
-    },	
     {
       name: "Wired-7",
       url: "https://wired-7.org/",
