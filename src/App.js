@@ -29,10 +29,37 @@ function App() {
       type: "daily",
     },
   ];
+  const social = [
+    {
+      name: "Tweetdeck",
+      url: "https://tweetdeck.twitter.com/",
+      type: "social",
+    },
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/",
+      type: "social",
+    },
+    {
+      name: "Deviantart",
+      url: "https://www.deviantart.com/",
+      type: "social",
+    },
+    {
+      name: "Wired-7",
+      url: "https://wired-7.org/",
+      type: "social",
+    },
+    {
+      name: "Lainchan",
+      url: "https://lainchan.org/",
+      type: "social",
+    },
+  ];
   const utility = [
     {
       name: "Coolors",
-      url: "https://coolors.co/",
+      url: "https://coolors.co/000000-444444-ffffff-00acc1-de3c4b-ea9010-81559b/",
       type: "utility",
     },
     {
@@ -59,28 +86,6 @@ function App() {
       name: "Demo Site",
       url: "http://demo.relisalazar.com/",
       type: "utility",
-    },
-  ];
-  const social = [
-    {
-      name: "Tweetdeck",
-      url: "https://tweetdeck.twitter.com/",
-      type: "social",
-    },
-	{
-      name: "Facebook",
-      url: "https://www.facebook.com/",
-      type: "social",
-    },	
-    {
-      name: "Wired-7",
-      url: "https://wired-7.org/",
-      type: "social",
-    },
-    {
-      name: "Lainchan",
-      url: "https://lainchan.org/",
-      type: "social",
     },
   ];
 
