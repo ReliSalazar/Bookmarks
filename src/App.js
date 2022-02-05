@@ -59,7 +59,7 @@ function App() {
   const utility = [
     {
       name: "Coolors",
-      url: "https://coolors.co/000000-444444-ffffff-00acc1-de3c4b-ea9010-81559b/",
+      url: "https://coolors.co/generate",
       type: "utility",
     },
     {
