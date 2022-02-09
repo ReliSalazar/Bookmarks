@@ -58,6 +58,11 @@ function App() {
   ];
   const utility = [
     {
+      name: "Notion",
+      url: "https://www.notion.so/relisalazar/",
+      type: "utility",
+    },
+    {
       name: "Coolors",
       url: "https://coolors.co/generate",
       type: "utility",
