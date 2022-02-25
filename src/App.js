@@ -14,6 +14,16 @@ function App() {
       type: "daily",
     },
     {
+      name: "Titan Email",
+      url: "https://titan.hostgator.mx/mail/",
+      type: "daily",
+    },
+    {
+      name: "Duolingo",
+      url: "https://www.duolingo.com/",
+      type: "daily",
+    },
+    {
       name: "Pomodoro Clock",
       url: "https://relisalazar.github.io/pomodoro-clock/",
       type: "daily",
@@ -31,6 +41,11 @@ function App() {
   ];
   const social = [
     {
+      name: "Twitter",
+      url: "https://www.twitter.com/",
+      type: "social",
+    },
+    {
       name: "Tweetdeck",
       url: "https://tweetdeck.twitter.com/",
       type: "social",
@@ -38,6 +53,11 @@ function App() {
     {
       name: "Facebook",
       url: "https://www.facebook.com/",
+      type: "social",
+    },
+    {
+      name: "Reddit",
+      url: "https://www.reddit.com/",
       type: "social",
     },
     {
@@ -58,13 +78,13 @@ function App() {
   ];
   const utility = [
     {
-      name: "Notion",
-      url: "https://www.notion.so/relisalazar/",
+      name: "Panel",
+      url: "https://mx38.hostgator.mx:2083/cpsess2876304578/frontend/paper_lantern/index.html",
       type: "utility",
     },
     {
-      name: "Coolors",
-      url: "https://coolors.co/generate",
+      name: "Notion",
+      url: "https://www.notion.so/relisalazar/",
       type: "utility",
     },
     {
@@ -89,32 +109,84 @@ function App() {
     },
     {
       name: "Demo Site",
-      url: "http://demo.relisalazar.com/",
+      url: "https://demo.relisalazar.com/",
       type: "utility",
+    },
+  ];
+  const tools = [
+    {
+      name: "Dev Docs",
+      url: "https://devdocs.io/",
+      type: "tools",
+    },
+    {
+      name: "Tailwindcss",
+      url: "https://tailwindcss.com/docs/installation",
+      type: "tools",
+    },
+    {
+      name: "Tools & Resources",
+      url: "https://undesign.learn.uno/",
+      type: "tools",
+    },
+    {
+      name: "Coolors",
+      url: "https://coolors.co/generate",
+      type: "utility",
+    },
+    {
+      name: "Smooth Shadow",
+      url: "https://shadows.brumm.af/",
+      type: "tools",
+    },
+    {
+      name: "Glassmorphism",
+      url: "https://hype4.academy/tools/glassmorphism-generator",
+      type: "tools",
+    },
+    {
+      name: "Get waves",
+      url: "https://getwaves.io/",
+      type: "tools",
     },
   ];
 
   return (
     <div className="app">
-      <div className="container">
+      <div className="container fade-in">
         <div className="links">
-          <h2>daily use</h2>
+          <div className="titlebox">
+            <h2>daily use</h2>
+          </div>
           {daily.map((bookmark) => (
             <Link name={bookmark.name} url={bookmark.url} key={bookmark.url} />
           ))}
         </div>
 
         <div className="links">
-          <h2>social</h2>
+          <div className="titlebox">
+            <h2>social</h2>
+          </div>
           {social.map((bookmark) => (
             <Link name={bookmark.name} url={bookmark.url} key={bookmark.url} />
           ))}
         </div>
 
         <div className="links">
-          <h2>utility</h2>
+          <div className="titlebox">
+            <h2>utility</h2>
+          </div>
           {utility.map((bookmark) => (
             <Link name={bookmark.name} url={bookmark.url} key={bookmark.url} />
+          ))}
+        </div>
+
+        <div className="links">
+          <div className="titlebox">
+            <h2>tools</h2>
+          </div>
+          {tools.map((tool) => (
+            <Link name={tool.name} url={tool.url} key={tool.url} />
           ))}
         </div>
       </div>

@@ -16,12 +16,14 @@
   display: flex;
   gap: 1rem;
 }
-
-.container h2 {
+.container .titlebox {
+  display: flex;
+}
+.container .titlebox h2 {
   position: relative;
   margin-bottom: 1rem;
 }
-.container h2:after {
+.container .titlebox h2:after {
   content: "";
   position: absolute;
   left: 0;
