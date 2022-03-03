@@ -38,6 +38,11 @@ function App() {
       url: "https://relisalazar.github.io/rutina/",
       type: "daily",
     },
+    {
+      name: "Media",
+      url: "file:///C:/Users/naitv/workspace/media-pendiente/index.html",
+      type: "daily",
+    },
   ];
   const social = [
     {
@@ -77,11 +82,6 @@ function App() {
     },
   ];
   const utility = [
-    {
-      name: "Panel",
-      url: "https://mx38.hostgator.mx:2083/cpsess2876304578/frontend/paper_lantern/index.html",
-      type: "utility",
-    },
     {
       name: "Notion",
       url: "https://www.notion.so/relisalazar/",
