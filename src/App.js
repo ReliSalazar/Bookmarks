@@ -76,6 +76,11 @@ function App() {
       type: "social",
     },
     {
+      name: "Wirechan",
+      url: "https://wirechan.org/",
+      type: "social",
+    },
+    {
       name: "Lainchan",
       url: "https://lainchan.org/",
       type: "social",
