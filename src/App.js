@@ -19,11 +19,6 @@ function App() {
       type: "daily",
     },
     {
-      name: "Duolingo",
-      url: "https://www.duolingo.com/",
-      type: "daily",
-    },
-    {
       name: "Pomodoro Clock",
       url: "https://relisalazar.github.io/pomodoro-clock/",
       type: "daily",
@@ -51,11 +46,6 @@ function App() {
       type: "social",
     },
     {
-      name: "Tweetdeck",
-      url: "https://tweetdeck.twitter.com/",
-      type: "social",
-    },
-    {
       name: "Facebook",
       url: "https://www.facebook.com/",
       type: "social",
@@ -71,13 +61,13 @@ function App() {
       type: "social",
     },
     {
-      name: "Wired-7",
-      url: "https://wired-7.org/",
+      name: "Wirechan",
+      url: "https://wirechan.org/",
       type: "social",
     },
     {
-      name: "Wirechan",
-      url: "https://wirechan.org/",
+      name: "Wired-7",
+      url: "https://wired-7.org/",
       type: "social",
     },
     {
