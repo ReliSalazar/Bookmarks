@@ -115,13 +115,13 @@ function App() {
       type: "tools",
     },
     {
-      name: "Tailwindcss",
-      url: "https://tailwindcss.com/docs/installation",
+      name: "Tools & Resources",
+      url: "https://undesign.learn.uno/",
       type: "tools",
     },
     {
-      name: "Tools & Resources",
-      url: "https://undesign.learn.uno/",
+      name: "Color wheel",
+      url: "https://www.canva.com/colors/color-wheel/",
       type: "tools",
     },
     {
