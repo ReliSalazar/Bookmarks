@@ -33,16 +33,11 @@ function App() {
       url: "https://relisalazar.github.io/rutina/",
       type: "daily",
     },
-    {
-      name: "Media",
-      url: "file:///C:/Users/naitv/workspace/media-pendiente/index.html",
-      type: "daily",
-    },
   ];
   const social = [
     {
-      name: "Twitter",
-      url: "https://www.twitter.com/",
+      name: "Tweetdeck",
+      url: "https://tweetdeck.twitter.com/",
       type: "social",
     },
     {
@@ -53,11 +48,6 @@ function App() {
     {
       name: "Reddit",
       url: "https://www.reddit.com/",
-      type: "social",
-    },
-    {
-      name: "Deviantart",
-      url: "https://www.deviantart.com/",
       type: "social",
     },
     {
@@ -80,6 +70,11 @@ function App() {
     {
       name: "Notion",
       url: "https://www.notion.so/relisalazar/",
+      type: "utility",
+    },
+    {
+      name: "Trello",
+      url: "https://trello.com/b/HSkYq7kV/sprint-software-compacto",
       type: "utility",
     },
     {
