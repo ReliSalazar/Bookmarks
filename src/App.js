@@ -46,8 +46,8 @@ function App() {
       type: "social",
     },
     {
-      name: "Reddit",
-      url: "https://www.reddit.com/",
+      name: "Wattpad",
+      url: "https://www.wattpad.com/",
       type: "social",
     },
     {
@@ -63,6 +63,11 @@ function App() {
     {
       name: "Lainchan",
       url: "https://lainchan.org/",
+      type: "social",
+    },
+    {
+      name: "Reddit",
+      url: "https://www.reddit.com/",
       type: "social",
     },
   ];
